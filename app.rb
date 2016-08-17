@@ -30,6 +30,7 @@ post '/api/login' do
   if email == 's@ss.ru' && password == 'demo'
     session[:user_id] = user_id
     status 200
+    File.read('./resource/user.json')
   else
     status 403
     JSON.generate(error: 'invalid_credentials', description: 'упс')

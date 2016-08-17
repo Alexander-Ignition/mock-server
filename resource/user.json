@@ -1,0 +1,15 @@
+{
+  "data": {
+    "user": {
+      "email": "admin@ss.ru",
+      "phone": "8 (001) 163-90-04",
+      "first_name": "Nate",
+      "last_name": "Cook",
+      "middle_name": "George",
+      "manager_id": 4,
+      "content_group_id": 3,
+      "region_id": 2,
+      "id": 1
+    }
+  }
+}
