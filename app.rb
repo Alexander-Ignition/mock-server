@@ -8,7 +8,7 @@ set :session_secret, 'super secret'
 helpers do
   def authenticate!
     unless session[:user_id] == user_id
-      halt 403, JSON.generate(error: 'invalid_credentials', description: 'ой ой')
+      halt 403, JSON.generate(code: 'invalid_credentials', description: 'ой ой')
     end
   end
 
@@ -33,7 +33,7 @@ post '/api/login' do
     File.read('./resource/user.json')
   else
     status 403
-    JSON.generate(error: 'invalid_credentials', description: 'упс')
+    JSON.generate(code: 'invalid_credentials', description: 'упс')
   end
 end
 
