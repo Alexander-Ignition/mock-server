@@ -38,7 +38,7 @@ post '/api/login' do
 end
 
 post '/api/logout' do
-  session[:user_id] == nil
+  session[:user_id] = nil
 end
 
 get '/api/materials' do
