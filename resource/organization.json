@@ -1,0 +1,66 @@
+[
+  {
+    "id" : 94,
+    "revenue" : null,
+    "start_date" : null,
+    "phone" : null,
+    "director" : null,
+    "contact_fields" : [
+
+    ],
+    "itn" : null,
+    "fot" : null,
+    "is_region" : false,
+    "activity_id" : null,
+    "geo" : {
+      "street" : "Спартаковский",
+      "city" : "Москва",
+      "country_region" : "",
+      "id" : 91,
+      "country" : "",
+      "postal_code" : "",
+      "longitude" : 1,
+      "street_number" : "",
+      "latitude" : 1,
+      "city_region" : ""
+    },
+    "employees" : null,
+    "bank_id" : null,
+    "type_id" : 6,
+    "email" : null,
+    "title" : "Рэдмэдробот",
+    "attitude_id" : null
+  },
+  {
+    "id" : 96,
+    "revenue" : null,
+    "start_date" : null,
+    "phone" : null,
+    "director" : null,
+    "contact_fields" : [
+
+    ],
+    "itn" : null,
+    "fot" : null,
+    "is_region" : false,
+    "activity_id" : null,
+    "geo" : {
+      "street" : "Спартаковский переулок",
+      "city" : "Москва",
+      "country_region" : "",
+      "id" : 93,
+      "country" : "Россия",
+      "postal_code" : "",
+      "longitude" : 1,
+      "street_number" : "1",
+      "latitude" : 1,
+      "city_region" : ""
+    },
+    "employees" : null,
+    "bank_id" : null,
+    "type_id" : 7,
+    "email" : null,
+    "title" : "Фармсолюшн",
+    "attitude_id" : null
+  }
+]

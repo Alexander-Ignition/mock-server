@@ -1,4 +1,3 @@
-# README: https://github.com/sinatra/sinatra/blob/master/README.ru.md
 require 'sinatra'
 require 'JSON'
 
@@ -8,7 +7,8 @@ set :session_secret, 'super secret'
 helpers do
   def authenticate!
     unless session[:user_id] == user_id
-      halt 403, JSON.generate(code: 'invalid_credentials', description: 'ой ой')
+      hash = { code: 'invalid_credentials', description: 'ой ой' }
+      halt 403, JSON.generate(hash)
     end
   end
 
@@ -33,7 +33,8 @@ post '/api/login' do
     File.read('./resource/user.json')
   else
     status 403
-    JSON.generate(code: 'invalid_credentials', description: 'упс')
+    hash = { code: 'invalid_credentials', description: 'упс' }
+    JSON.generate(hash)
   end
 end
 
@@ -43,4 +44,8 @@ end
 
 get '/api/materials' do
   JSON.generate(materials: [1, 2])
+end
+
+get '/api/organization' do
+    File.read('./resource/organization.json')
 end
