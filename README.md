@@ -15,5 +15,5 @@ $ ruby app.rb
 
 Start server with auto restart.
 ```bash
-$ shotgun app.rb
+$ shotgun
 ```
