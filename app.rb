@@ -2,6 +2,7 @@ require 'sinatra'
 require 'JSON'
 
 enable :sessions
+set :sessions, key: 'sessionid'
 set :session_secret, 'super secret'
 
 helpers do
@@ -47,5 +48,5 @@ get '/api/materials' do
 end
 
 get '/api/organization' do
-    File.read('./resource/organization.json')
+  File.read('./resource/organization.json')
 end
