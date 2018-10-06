@@ -10,10 +10,10 @@ $ bundle install
 
 Simple start server.
 ```bash
-$ ruby app.rb
+$ bundle exec ruby app.rb
 ```
 
 Start server with auto restart.
 ```bash
-$ shotgun
+$ bundle exec rackup
 ```
